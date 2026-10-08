@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tamama Studio - Developer of Puppy Block">
-<title>Tamama Studio</title>
+<meta name="description" content="Tamanari Studio - Developer of Puppy Block">
+<title>Tamanari Studio</title>
 <style>
 :root{--bg:#f7fbf8;--panel:#fff;--mint:#73d6bd;--mint2:#2d927c;--cream:#fff5df;--cream2:#f1c985;--brown:#5b3928;--text:#34433e;--muted:#74847e;--line:#dcebe5;--shadow:0 18px 50px rgba(60,105,90,.12)}
 *{box-sizing:border-box}
@@ -60,11 +60,11 @@ footer{padding:34px 0 44px;color:#82908b;font-size:13px;text-align:center}
 <div class="wrap">
 <header>
 <nav class="nav">
-<div class="brand"><div class="logo">🐾</div><span>Tamama Studio</span></div>
+<div class="brand"><div class="logo">🐾</div><span>Tamanari Studio</span></div>
 <div class="nav-right">
 <div class="nav-links">
 <a href="#puppy-block" data-i18n="navGame">Puppy Block</a>
-<a href="https://tamamastudio.github.io/puppyblock-privacy/" data-i18n="navPrivacy">Privacy Policy</a>
+<a href="https://tamanaristudio.github.io/puppyblock-privacy/" data-i18n="navPrivacy">Privacy Policy</a>
 <a href="mailto:tjddhr19@gmail.com" data-i18n="navContact">Contact</a>
 </div>
 <div class="lang-switch" aria-label="Language selector">
@@ -80,11 +80,11 @@ footer{padding:34px 0 44px;color:#82908b;font-size:13px;text-align:center}
 <section class="hero" id="puppy-block">
 <div>
 <div class="eyebrow" data-i18n="eyebrow">🐶 Cute Puzzle Game Studio</div>
-<h1>Tamama Studio</h1>
+<h1>Tamanari Studio</h1>
 <h2>Puppy Block</h2>
 <p data-i18n="heroText">We create casual puzzle games with cute puppy themes and playful block mechanics. Our goal is to make games that are easy to enjoy, charming, and fun for everyone.</p>
 <div class="actions">
-<a class="btn primary" href="https://tamamastudio.github.io/puppyblock-privacy/" data-i18n="privacyBtn">🔒 Privacy Policy</a>
+<a class="btn primary" href="https://tamanaristudio.github.io/puppyblock-privacy/" data-i18n="privacyBtn">🔒 Privacy Policy</a>
 <a class="btn secondary" href="mailto:tjddhr19@gmail.com" data-i18n="contactBtn">✉️ Contact</a>
 </div>
 </div>
@@ -127,14 +127,14 @@ footer{padding:34px 0 44px;color:#82908b;font-size:13px;text-align:center}
 
 <section class="contact">
 <div>
-<h3 data-i18n="contactTitle">Contact Tamama Studio</h3>
+<h3 data-i18n="contactTitle">Contact Tamanari Studio</h3>
 <p data-i18n="contactText">Game inquiries and support</p>
 </div>
 <a class="btn primary" href="mailto:tjddhr19@gmail.com">tjddhr19@gmail.com</a>
 </section>
 </main>
 
-<footer data-i18n="footer">© 2026 Tamama Studio. All rights reserved.</footer>
+<footer data-i18n="footer">© 2026 Tamanari Studio. All rights reserved.</footer>
 </div>
 
 <script>
@@ -154,9 +154,9 @@ const translations = {
     privacyText: "Information about privacy and advertising practices is available in our published Privacy Policy.",
     supportTitle: "Support",
     supportText: "If you have questions or experience any issues while playing, please contact us by email.",
-    contactTitle: "Contact Tamama Studio",
+    contactTitle: "Contact Tamanari Studio",
     contactText: "Game inquiries and support",
-    footer: "© 2026 Tamama Studio. All rights reserved."
+    footer: "© 2026 Tamanari Studio. All rights reserved."
   },
   ko: {
     navGame: "Puppy Block",
@@ -173,9 +173,9 @@ const translations = {
     privacyText: "개인정보 및 광고 관련 안내는 공개된 개인정보처리방침에서 확인할 수 있습니다.",
     supportTitle: "고객 지원",
     supportText: "게임 이용 중 문의사항이나 불편사항이 있다면 이메일로 연락해 주세요.",
-    contactTitle: "Tamama Studio 문의",
+    contactTitle: "Tamanari Studio 문의",
     contactText: "게임 관련 문의 및 지원",
-    footer: "© 2026 Tamama Studio. All rights reserved."
+    footer: "© 2026 Tamanari Studio. All rights reserved."
   },
   ja: {
     navGame: "Puppy Block",
@@ -192,9 +192,9 @@ const translations = {
     privacyText: "個人情報および広告に関する情報は、公開されているプライバシーポリシーでご確認いただけます。",
     supportTitle: "サポート",
     supportText: "ゲームに関するご質問や不具合がございましたら、メールでお問い合わせください。",
-    contactTitle: "Tamama Studio へのお問い合わせ",
+    contactTitle: "Tamanari Studio へのお問い合わせ",
     contactText: "ゲームに関するお問い合わせ・サポート",
-    footer: "© 2026 Tamama Studio. All rights reserved."
+    footer: "© 2026 Tamanari Studio. All rights reserved."
   }
 };
 
@@ -208,14 +208,14 @@ function setLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach(btn => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
-  localStorage.setItem("tamama-language", lang);
+  localStorage.setItem("tamanari-language", lang);
 }
 
 document.querySelectorAll(".lang-btn").forEach(btn => {
   btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
 });
 
-const saved = localStorage.getItem("tamama-language");
+const saved = localStorage.getItem("tamanari-language");
 setLanguage(saved && translations[saved] ? saved : "en");
 </script>
 </body>
